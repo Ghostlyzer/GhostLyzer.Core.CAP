@@ -21,6 +21,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="DotNetCore.CAP" Version="8.0.1" />
     <PackageReference Include="DotNetCore.CAP.Dashboard" Version="8.0.1" />
     <PackageReference Include="DotNetCore.CAP.InMemoryStorage" Version="8.0.1" />
