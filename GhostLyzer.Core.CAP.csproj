@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>GhostLyzer Core CAP</Title>
+    <Company>GhostLyzer</Company>
+    <Authors>Christian Schou</Authors>
+    <Description>A package to deal with distributed transactions in GhostLyzer.</Description>
+    <Copyright>GhostLyzer</Copyright>
+    <PackageProjectUrl>https://github.com/Ghostlyzer/GhostLyzer.Core.CAP</PackageProjectUrl>
+    <PackageIcon>github-readme-logo-ghostlyzer.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Ghostlyzer/GhostLyzer.Core.CAP</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>GhostLyzer;CAP</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetCore.CAP" Version="8.0.1" />
+    <PackageReference Include="DotNetCore.CAP.Dashboard" Version="8.0.1" />
+    <PackageReference Include="DotNetCore.CAP.InMemoryStorage" Version="8.0.1" />
+    <PackageReference Include="DotNetCore.CAP.OpenTelemetry" Version="8.0.1" />
+    <PackageReference Include="MassTransit" Version="8.1.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="OpenTelemetry" Version="1.7.0" />
+    <PackageReference Include="OpenTelemetry.Api" Version="1.7.0" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.7.0" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.7.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.7.1" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.7.1" />
+    <PackageReference Include="Savorboard.CAP.InMemoryMessageQueue" Version="8.0.0" />
+    <PackageReference Include="Scrutor" Version="4.2.2" />
+    <PackageReference Include="Scrutor.AspNetCore" Version="3.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="assets\img\github-readme-logo-ghostlyzer.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
