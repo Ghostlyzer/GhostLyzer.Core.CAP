@@ -39,9 +39,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="assets\img\github-readme-logo-ghostlyzer.png">
+    <None Update="github-readme-logo-ghostlyzer.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="LICENSE">
       <Pack>True</Pack>
