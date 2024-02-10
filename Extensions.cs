@@ -38,7 +38,7 @@ namespace GhostLyzer.Core.CAP
                 x.FailedThresholdCallback = failed =>
                 {
                     var logger = failed.ServiceProvider.GetService<ILogger>();
-                    logger.LogError(
+                    logger!.LogError(
                         $@"A message of type {failed.MessageType} failed after executing {x.FailedRetryCount} several times,
                             requiering manual troubleshooting. Message name: {failed.Message.GetName()}");
                 };
